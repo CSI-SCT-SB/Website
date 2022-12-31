@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 30;
+}
+.hamburgerIcon{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: end;
+}
+/* section 1 starts here */
+.logo-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    top: 30px;
+    left: 4vw;
+}
+.csiSCTLogo{
+    height: 45px;    
+}
+.hamburgerIcon div{
+    background: black;
+    height: 2.5px;
+    border-radius: 20%;
+}
+.line1{
+    width: 27px;
+}
+.line2{
+    width: 19px;
+}
+.line3{
+    width: 24px;
+}
+.moreIcon{
+    background: whitesmoke;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+    cursor: pointer;
+}
+.landing{
+    height: 75vh;
+}
+.leftandRight{
+    /*! display: flex; */
+    width: 100vw;
+}
+.left{
+    width: 65vw;
+    padding-left: 4vw;
+    margin-top: 25vh;
+}
+.right{
+    width: 40vw;
+}
+.robo-img{
+    position: absolute;
+    top: 0;
+    z-index: -5;
+    width: 40vw;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+}
+.noiseBg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    opacity: 0.2;
+    height: 100vh;
+    object-fit: cover;
+    /*! left: 0; */
+    /*! right: 0; */
+    width: 100vw;
+}
+.headline{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 650;
+    font-size: 70px;
+    line-height: normal;
+    color: #000000;
+}
+.sub-heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 52px;
+    letter-spacing: 0.06em;
+}
+.join-us{
+    margin-top: 3vh;
+    background: black;
+    opacity: 0.9;
+    border: none;
+    color: white;
+    font-family: 'Montserrat';
+    padding:  10px 35px;
+    cursor: pointer;
+}
+.join-us:hover{
+    opacity: 0.6;
+}
+.theUpcomingEvents{
+    margin-left: 4vw;
+    margin-top: 80px;
+}
+.upcomingEvents{
+    display: flex;
+    gap: 1vw;
+}
+.upcomingEvents img{
+    height: 10.5vw;
+    width: 10.5vw;
+    border-radius: 10px;
+    object-fit: cover;    
+}
+.heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.upcoming-event-margin{
+    margin-bottom: 60px;
+}
+.heading::after{
+    left: 0;
+    bottom: -5px;
+    content: '';
+    width: 40px;
+    height: 3px;
+    border-radius: 50px;
+    background: black;
+    display: block;
+    position: absolute;
+}
+.white-heading{
+    color: white;
+}
+.white-heading::after{
+    background: white;
+}
+/* section 1 ends here */
+
+.about{
+    padding: 4vw 5vw;
+    position: relative;
+    box-sizing: border-box;
+}
+.about::before{
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/noise-bg.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.answer{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+}
+.que-answer-image{
+    display: flex;
+    gap: 70px; 
+    align-items: center;
+}
+.csi-main-logo{
+    height: 130px;
+}
+.about-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.long-robo-img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -20;
+}
+.noiseBg-in-long-section{
+    position: absolute;
+    z-index: -5;
+}
+.flagship-events{
+    display: flex;
+    gap: 50px;
+}
+.flagship-event, .flag-event-poster{
+    border-radius: 500px;
+    height: 250px;
+}
+.flag-event-poster{
+    border: 5px solid white;
+    position: relative;
+}
+section{
+    padding: 10vh 4vw;
+    box-sizing: border-box;
+}
+.all-events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 65px;
+}
+.posters{
+    width: 325px;
+    height: 325px;
+    border-radius: 10px;
+}
+.long-section{
+    background: url(../images/robot-img.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.a-section-inside-long-section{
+    background: url(../images/noise-bg.svg);    
+    background-repeat: repeat-y;
+}
+/* .long-section::after{
+    content: '';
+    background-image: url(../images/noise-bg.svg);
+    background-repeat: repeat-y;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+} */
+.alll-events{
+    padding: 0 4vw 10vh 4vw;
+}
+.a-section-btw-two-long{
+    height: 100vh; 
+    position: relative;
+    /*! padding: 4vw 5vw; */
+}
+/* .a-section-btw-two-long::before{
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/noise-bg.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 1;
+} */
+
+.left-and-right-of-team{
+    display: flex;
+    gap: 50px;
+}
+.csi-team-pic{
+    width: 55vw;
+}
+.team-section-container{    
+    padding: 4vw 5vw;
+}
+.csi-numbers{
+    display: flex;
+    margin-top: 90px;
+    gap: 30px;
+}
+.rectangle{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 37px;
+    letter-spacing: 2px;
+    z-index: 20;
+}
+.one-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.number-txt{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+.not-usual-section{
+    padding: 0;
+    padding-top: 4vw;
+}
+
+/*---------------*/
+.carousel1{
+    display: flex;
+    gap:15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    cursor: grab;
+}
+.carousel1::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 5px;
+}
+.carousel1::-webkit-scrollbar:hover {
+    height: 8px;
+}
+.carousel1::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 5px;
+}
+.carousel1::-webkit-scrollbar-thumb {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar:hover {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    width: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+@media screen and (max-width: 1130px) {
+    .carousel1::-webkit-scrollbar {
+        display: none;
+    }
+    .carousel1 {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .carousel1::-webkit-scrollbar {
+        display: none;
+    }
+    .carousel1 {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    } 
+    .carousel-img {
+        height: 230px;
+        width: 325px;
+    }
+}
+.gallery-image{
+    height: 250px;
+    width: 415px;
+    position: relative;
+}
+.carousel-img{
+    height: 250px;
+    width: 415px;
+    object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+    .carousel-img {
+        height: 230px;
+        width: 325px;
+    }
+}
+.keynotes{
+    display: flex;
+    gap: 30px;
+}
+.keynote{
+    display: flex;
+    background: #000000;
+    border-radius: 10px;
+    height: 290px;
+}
+.keynote-person{
+    height: 290px;
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+.keynote-right{
+    color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 390px;
+    font-family: 'Montserrat';
+    font-style: italic;
+}
+.keynote-person-name{
+    margin-top: 30px;    
+    font-weight: 550;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.keynote-txt{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.circle{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    width: 100px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.circle:hover{
+    background: rgba(0, 0, 0, 1.0);
+}
+.copyright{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.black-layer{
+    background: rgba(0, 0, 0, 0.45);
+}
+.special-class{
+    height: unset;
+}
+.special-noisebg{
+    height: 100%;
+}
+.custom-margin{
+    margin: 10vh 4vw 0 4vw;
+}
+.whiteLogo{
+    display: none;
+}
+@media screen and (max-width: 1485px) {
+    .csi-team-pic{
+        width: 45vw;
+    }
+}
+@media screen and (max-width: 1355px) {
+    .keynote-right{
+        width: 320px;
+    }
+    .headline{
+        font-size: 5vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .left-and-right-of-team{
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .right-of-team{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .left-of-team{
+        display: flex;
+        justify-content: center;
+    }
+    .csi-numbers{
+        margin-top: 0;
+    }
+    .heading{
+        margin-bottom: 3vh;
+    }
+    .custom-margin{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .keynotes{
+        overflow-x: scroll;
+    }
+    .sub-heading{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .posters{
+        width: 20vw;
+        height: 20vw;
+    }
+    .rectangle {
+      height: 120px;
+      width: 120px;
+      font-weight: 600;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }    
+}
+@media screen and (max-width: 960px) {
+    .upcomingEvents{
+        gap: 2vw;
+    }
+    .keynotes{
+        overflow-x: unset;
+        flex-direction: column;
+    }
+    .keynote-right{
+        width: unset;
+    }
+    .right-of-team{
+        flex-direction: column-reverse;
+    }
+    .robo-img{
+        left: 0;
+        width: 100vw;
+    }
+    .flagship-events{
+        gap: 3vw;
+    }
+}
+@media screen and (max-width: 811px) {
+    .headline{
+        font-size: 11vw;
+        color: white;
+    }
+    .right, .left{
+        width: unset;
+    }
+    .whiteLogo{
+        display: block;
+    }
+    .blackLogo{
+        display: none;
+    }
+    .sctLogo{
+        height: 70px;
+    }
+    .sub-heading{
+        font-size: 7.5vw;
+        font-weight: 700;
+        color: white;
+        margin-top: 2vh;
+    }
+    .upcomingEvents img{
+        height: 25vw;
+        width: 25vw;
+    }
+    .upcomingEvents{
+        gap: 25px;
+        overflow-x: scroll;
+    }
+    .upcomingEvents::-webkit-scrollbar {
+        display: none;
+    }
+    .upcomingEvents {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .left{
+        margin-top: 19vh;
+    }
+    .join-us{
+        margin-top: 6vh;
+    }
+    .landing::before{
+        content: '';
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        background-image: url(../images/noise-bg.svg);
+        background-repeat: no-repeat;
+        opacity: 1;        
+    }
+    .logo-container{
+        z-index: 20;
+    }
+    .theUpcomingEvents, .left{
+        position: relative;
+        z-index: 20;
+    }
+    .titleMob{
+        color: white;
+    }
+    .landing{
+        height: 81vh;
+    }
+    .contacts-joinus{
+        margin-top: unset;
+    }
+    .upcoming-event-margin::after{
+        background: white;
+    }
+    section {
+        padding: 7vh 4vw;
+    }
+    .flagship-events{
+        gap: 4vw;
+        overflow-x: scroll;
+    }
+    .flagship-events::-webkit-scrollbar {
+        display: none;
+    }
+    .flagship-events {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .flag-event-poster, .flag-event{
+        height: 20vh;
+    }
+    .posters{
+        width: 27vw;
+        height: 27vw;
+    }
+    .team-section-container {
+        padding: 10vw 5vw;
+    }
+    .csi-team-pic {
+        width: 85vw;
+    }
+    .left-and-right-of-team{
+        margin-top: 5vh;
+    }
+    .join-us{
+        padding: 15px 55px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .headline{
+        font-size: 13vw;
+        color: white;
+    }
+    .left{
+        margin-top: 25vh;
+    }
+    .landing{
+        height: 75vh;
+    }
+    .logo-container{
+        gap: 10px;
+    }
+    .upcomingEvents{
+        gap: 15px;
+        padding-right: 4vw;
+    }
+    .upcomingEvents img{
+        height: 40vw;
+        width: 40vw;
+    }
+    .que-answer-image{
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .about::before{
+        content: '';
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url(../images/noise-bg.svg);
+        background-repeat: repeat-y;
+        opacity: 0.2;
+    }
+    .about {
+        padding: 5vh 5vw;
+    }
+    .flag-event-poster, .flag-event{
+        height: 15vh;
+    }
+    .flagship-event{
+        height: unset;
+    }
+    .circle{
+        height: 70px;
+        width: 80px;
+    }
+    .social{
+        gap: 30px;
+    }
+    .copyright{
+        text-align: center;
+        font-weight: 500;
+    }
+    .all-events {
+        row-gap: 35px;
+    }
+    .rectangle {
+        height: 90px;
+        width: 90px;
+        font-size: 25px;
+    }
+    .number-txt{
+        font-size: 14px;
+        text-align: center;
+    }
+    .keynote{
+        height: unset;
+        flex-direction: column;
+    }
+    .keynote-person{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: 260px;
+    }
+    .keynote-right{
+        padding: 25px;
+        overflow-y: scroll;
+    }
+    .keynote-txt{
+        font-size: 15px;
+    }
+    .keynote-person-name{
+        font-size: 16px;
+    }
+    .moreIcon{
+        right: 20px;
+    }
+    .insideTeam{
+        height: 100%;
+    }
+    .teamSection{
+        height: unset;
+    }
+}
+.logo{
+    text-decoration: none;
+}
+@keyframes more-icon-animation{
+    0%{
+        height: 45px;
+        width: 45px;
+    }
+    50%{
+        height: 55px;
+        width: 55px;
+    }
+    100%{
+        height: 45px;
+        width: 45px;
+    }
+}
+.page-loader{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    left:0;
+    right:0;
+    background: #3D4049 url('../loader-animation.gif') no-repeat center center;
+    background-size: 20%;
+    z-index: 200;
+}
+@media screen and (max-width: 500px) {
+    .page-loader{
+        background-size: 50%;
+    }
+}
+
+.moreIconAnimation{
+    /* animation: more-icon-animation 0.5s;
+    animation-timing-function: linear; */
+}
+
+
+.more-icon-screen{
+    position: absolute;
+    background: rgb(0,0,0,0.5);
+    z-index: 30;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+}
+.optionAndJoin{
+    background: white;    
+    height: 100vh;
+    width: 36vw;
+    padding: 4vh 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.more-options{
+    color: black;
+}
+.forButton{
+    display: flex;
+    justify-content: center;
+}
+.more-options{
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    /*! align-items: flex-end; */
+}
+.options{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    height: 9.5vh;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 0 3vw;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.30) 0%, rgba(217, 217, 217, 0) 100%);
+}
+.animatedLine1{
+    width: 30px;
+    transform: rotate(315deg);
+    position: absolute;
+    left: -14px;
+    top: 0px;
+}
+.animatedLine2{
+    width: 0;
+    height: 0;
+}
+.animatedLine3{
+    width: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -14px;
+    top: 0.5px;
+}
+@keyframes line2{
+    0%{
+        width: 19px;
+        height: 2.5px;
+        position: unset;
+    }
+    100%{
+        width: 0;
+        height: 0;
+    }
+}
+@keyframes line1{
+    0%{
+        height: 2.5px;
+        width: 27px;
+        position: unset;
+    }
+    100%{
+        width: 31px;
+        transform: rotate(315deg);
+        position: absolute;
+        left: -15px;
+    }
+}
+@keyframes line3{
+    0%{
+        height: 2.5px;
+        width: 24px;
+        position: unset;
+    }
+    100%{
+        width: 30px;
+        transform: rotate(45deg);
+        position: absolute;
+        left: -14px;
+    }
+}
+@media screen and (max-width: 811px) {    
+    .optionAndJoin {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .optionAndJoin {
+        width: 70vw;
+    }
+    .options{
+        font-size: 25px;
+    }
+}
+a{
+    cursor: pointer;
+}

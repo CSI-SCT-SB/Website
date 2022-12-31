@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home CSI SCTCE</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="static/icons/csi-sct-logo-white.svg" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/61a0a7ad93.js" crossorigin="anonymous"></script>
+    <meta name="description" content="CSI SCT SB aims to develop the technical skills of students for their professional development by providing numerous webinars and workshops on leading topics." />
+    <meta property="og:title" content="CSI SCT SB" />
+    <meta property="og:url" content="https://www.sctce.ac.in/" />
+    <meta property="og:description" content="Official website of Computer Society of India Sree Chitra Thirunal College of Engineering" />
+    <meta property="og:image" content="static/images/csi-meta-tag-img" />
+</head>
+<body>
+    <div class="page-loader"></div>
+    <div class="seperator" style="position: absolute; top: 0;" id="home"></div>
+    <div class="logo-container">
+        <a href="" class="logo"><img src="static/icons/csi-sct-logo.svg" alt="CSI SCTCE" class="csiSCTLogo blackLogo"></a>
+        <a href="" class="logo"><img src="static/icons/csi-sct-logo-white.svg" alt="CSI SCTCE" class="csiSCTLogo whiteLogo"></a>
+        <a href="https://www.sctce.ac.in/" class="logo"><img src="static/icons/sct-black.svg" alt="CSI SCTCE" class="csiSCTLogo blackLogo"></a>
+        <a href="https://www.sctce.ac.in/" class="logo"><img src="static/icons/sct-white.svg" alt="CSI SCTCE" class="csiSCTLogo whiteLogo sctLogo"></a>
+    </div>    
+    <div class="moreIcon">
+        <div class="hamburgerIcon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    <div class="more-icon-screen">
+        <div class="optionAndJoin">
+            <div class="more-options">
+                <a class="options" onclick="goToHome()">Home</a>
+                <a class="options" onclick="goToAbout()">About Us</a>
+                <a class="options" href="event-details.html" onclick="goToEvents()">Events</a>
+                <a class="options" href="teams.html" onclick="goToTeam()">Team</a>
+                <a class="options" onclick="goToGallery()">Gallery</a>
+                <a class="options" onclick="goToResources()">Resources</a>
+                <!-- <a class="options" onclick="goToGame()">Game</a> -->
+                <a class="options" onclick="goToContact()">Contacts</a>
+            </div>
+            <div class="forButton">
+                <button class="join-us" style="margin:0;" onclick="location.href = 'teams.html';">Join Us</button>
+            </div>
+        </div>        
+    </div>
+    <div class="landing">   
+        <div class="leftandRight">
+            <div class="left">
+                <h2 class="headline">CSI Student Branch</h2>
+                <h4 class="sub-heading">SCTCE</h4>
+                <button class="join-us" onclick="location.href = 'teams.html';">Join Us</button>
+            </div>
+            <div class="right">
+                <img src="static/images/robot-img.jpg" alt="img of an AI" class="robo-img">
+            </div>
+        </div>
+        <img src="static/images/noise-bg.svg" alt="" class="noiseBg" loading="lazy">
+        <div class="theUpcomingEvents">
+            <div class="title titleMob">
+                <p class="heading upcoming-event-margin">Upcoming Events</p>
+            </div>
+            <div class="upcomingEvents">
+                <img src="static\images\CSI Event Posters\Delve ML.jpg" alt="">
+                <img src="static\images\CSI Event Posters\APT-get upgrade.jpg" alt="">
+                <img src="static\images\CSI Event Posters\League.jpg" alt="">
+                <img src="static\images\CSI Event Posters\Cyberware.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="seperator" id="about"></div>
+    <div class="about">
+        <div class="about-container">
+            <div class="que-answer-image">
+                <div class="que-and-answer">
+                    <p class="heading">What is CSI ?</p>
+                    <p class="answer">
+                        Computer Society of India is a nonprofit professional body formed to exchange views and information and to learn and share ideas. CSI was first formed in the year 1965 by a handful of IT enthusiasts who felt the need to organize their activities. It is the first, largest, and the most professionally managed association of and for  IT professionals in India. Currently having 488 student branches and rooted firmly in 73 different locations, CSI is planning to expand its horizons to other cities and countries with an objective to provide more opportunities and contribute more.
+                    </p>
+                </div>
+                <img src="static/icons/csi-main-logo.png" alt="" class="csi-main-logo">
+            </div>
+            <div class="que-and-answer">
+                <p class="heading">Why join CSI ?</p>
+                <p class="answer">
+                    CSI SCT SB aims to develop the technical skills of students for their professional development by providing numerous webinars and workshops on leading topics. A great platform to showcase your technical skillsets and knowledge. Moreover, you can be a part of a network with dedicated academicians, scientists, and alumni.
+                </p>
+            </div>
+            <div class="que-and-answer">
+                <p class="heading">What we do ?</p>
+                <p class="answer">
+                    CSI SCT SB hosts various events including lecture meetings, seminars, conferences, training programs, programming/coding contests, and practical visits to installations. This is also a very vast space to exchange views and information, learn and share ideas. The society does everything possible to bring out the best skills in its members.
+                </p>
+            </div>
+            <div class="que-and-answer">
+                <p class="heading">About the Team ?</p>
+                <p class="answer">
+                    We have a set of vibrant volunteers ready to make their ideas into reality. Each and every member of CSI SCT SB are unique in their skills and talents. Teamwork with creativity, hard work, support for each other’s ideas, and most importantly the transparency about the work happening inside the team helps in achieving the end goal effortlessly. Hence, bringing out the joy of volunteering and taking the society to new heights.
+                </p>
+            </div>
+        </div>
+        <div class="about-btn-container">
+            <button class="join-us contacts-joinus" onclick="location.href = 'teams.html';">Join Us</button>
+        </div>        
+    </div>
+    <div class="seperator" id="events"></div>
+    <div class="long-section events">
+        <!-- <img src="../static/images/robot-img.jpg" alt="" class="long-robo-img"> -->
+        <div class="a-section-inside-long-section">
+            <section>
+                <p class="heading white-heading">Socities under CSI SCT SB</p>
+                <div class="flagship-events">
+                    <a href="#" class="flagship-event"><img src="static\images\SAM logo.svg" alt="" class="flag-event-poster"></a>
+                    <a href="#" class="flagship-event"><img src="static\images\SEC logo(1).svg" alt="" class="flag-event-poster"></a>
+                    <!-- <a href="#" class="flagship-event"><img src="static/images/Rustium.webp" alt="" class="flag-event-poster"></a> -->
+                </div>
+            </section>
+            <section class="alll-events">
+                <p class="heading white-heading">Events</p>
+                <div class="all-events">
+                    <img src="static\images\CSI Event Posters\Finder.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Valorant.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Breaking down the matrix.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\PY_Extreme.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Matlab.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Python for finance.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Electruino.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\BioBytes.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Desimulate.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Hack Whack.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Mending minds.jpeg" alt="" class="posters" loading="lazy">
+                    <img src="static\images\CSI Event Posters\Hacktober Fest.jpeg" alt="" class="posters" loading="lazy">
+                </div>
+                <div class="forButton" style="margin-top: 3vh;">
+                    <a class="join-us" href="event-details.html" style="margin:0;background: white;color: black;font-weight: 600;opacity: 1;text-decoration: none;cursor: pointer;">See Details</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="seperator" id="team"></div>
+    <div class="a-section-btw-two-long teamSection">
+        <img src="static/images/noise-bg.svg" alt="" class="noiseBg insideTeam" loading="lazy">
+        <div class="team-section-container">
+            <p class="heading">The Team</p>
+            <div class="left-and-right-of-team">
+                <div class="left-of-team">
+                    <img src="static\images\Gallery/main-team.jpeg" alt="" class="csi-team-pic" loading="lazy">
+                </div>
+                <div class="right-of-team">
+                    <div class="content-and-btn">
+                        <p class="answer">
+                            The Executive Committee’22 of CSI SCT SB, including the faculty advisor, consists of 8 members. The consuetude of selection of the current execom lies with the immediate past team. The governance of the entire student branch is led by the team, which meets regularly to make decisions about urgent and crisis circumstances that may alter the course of the organization and address pressing issues.
+As an execom member, we’re on a committed journey looking for ways to stimulate growth and improve our organization's deliverables in order to benefit the entire student community.
+                        </p>
+                        <button class="join-us" onclick="location.href = 'teams.html';">See Full Team</button>
+                    </div>
+                    <div class="csi-numbers">
+                        <div class="one-data">
+                            <div class="rectangle">137</div>
+                            <p class="number-txt">No: of members</p>
+                        </div>
+                        <div class="one-data">
+                            <div class="rectangle">8</div>
+                            <p class="number-txt">No: of Events</p>
+                        </div>
+                        <div class="one-data">
+                            <div class="rectangle">1277</div>
+                            <p class="number-txt">No: of Participants</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="seperator" id="gallery"></div>
+    <div class="long-section gallery-resources">
+        <!-- <img src="../static/images/robot-img.jpg" alt="" class="long-robo-img"> -->
+        <div class="a-section-inside-long-section gallery-resources">
+            <section class="not-usual-section">
+                <p class="heading white-heading custom-margin">Gallery</p>
+                <div class="carouselContaier">
+                    <div class="carousel1">
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.29.49 PM.jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.25.23 PM (1).jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div> 
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.25.24 PM.jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div> 
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\IMG_20221208_19543661.jpg" alt="" class="carousel-img" loading="lazy">
+                        </div> 
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.25.21 PM.jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.25.22 PM (1).jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div> 
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\IMG_20221208_19544344.jpg" alt="" class="carousel-img" loading="lazy">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.29.49 PM (1).jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\IMG_20221208_19545799.jpg" alt="" class="carousel-img" loading="lazy">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\WhatsApp Image 2022-12-27 at 10.29.50 PM.jpeg" alt="" class="carousel-img" loading="lazy">
+                        </div>                        
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\IMG_20221208_19554968.jpg" alt="" class="carousel-img" loading="lazy">
+                        </div>                                 
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\IMG_20221208_19554191.jpg" alt="" class="carousel-img" loading="lazy">
+                        </div>                         
+                        <div class="gallery-image">
+                            <img src="static\images\Gallery\IMG_20221208_20045043.jpg" alt="" class="carousel-img" loading="lazy">
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section class="alll-events" id="resources">
+                <!-- <p class="heading white-heading">Resources</p>
+                <div class="all-events">
+                    <a href="#"><img src="static/images/Rustium.webp" alt="" class="posters" loading="lazy"></a>
+                    <a href="#"><img src="static/images/Rustium.webp" alt="" class="posters" loading="lazy"></a>
+                    <a href="#"><img src="static/images/Rustium.webp" alt="" class="posters" loading="lazy"></a>
+                    <a href="#"><img src="static/images/Rustium.webp" alt="" class="posters" loading="lazy"></a>
+                </div> -->
+            </section>
+        </div>
+    </div>
+    <div class="seperator"></div>
+    <div class="a-section-btw-two-long special-class ">
+        <img src="static/images/noise-bg.svg" alt="" class="noiseBg special-noisebg" loading="lazy">
+        <div class="team-section-container">
+            <p class="heading">Keynotes</p>
+            <div class="keynotes">
+                <div class="keynote">
+                        <img src="static/images/Teams Photos/Dr. Jayasudha J S.jpeg" alt="" class="keynote-person" loading="lazy">
+                    <div class="keynote-right">
+                        <p class="keynote-txt">
+                            I am more than jovial to have mentored the CSI student branch. CSI SCT SB has done a remarkable job this year and have organised a lot of workshops and competitions. I'm looking forward to more such good work from the student branch and support the team.
+                        </p>
+                        <p class="keynote-person-name">
+                            Dr. Jayasudha J S, SB Counsellor
+                        </p>
+                    </div>
+                </div>
+                <div class="keynote">
+                    <img src="static\images\Teams Photos\Jayanth M.jpg" alt="" class="keynote-person" loading="lazy">
+                    <div class="keynote-right">
+                        <p class="keynote-txt">
+                            The only thing that we, at CSI SCT SB focused was on bringing together students from multiple branches. BEMAP, a proud event of CSI SCT SB is one such example.<br>Rest assured, just sit tight we are there for you.
+                        </p>
+                        <p class="keynote-person-name">
+                            Jayanth M, Chairman
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="seperator" id="contact"></div>
+    <div class="long-section gallery-resources contact">
+        <!-- <img src="../static/images/robot-img.jpg" alt="" class="long-robo-img"> -->
+        <div class="a-section-inside-long-section gallery-resources">
+            <div class="black-layer">
+                <section>
+                    <div class="social">
+                        <a href="https://www.instagram.com/csisctsb/" class="circle"><i class="fa-brands fa-square-instagram social-icon"></i></a>
+                        <a href="facebook.com/csisctsb" class="circle"><i class="fa-brands fa-square-facebook social-icon"></i></a>                    
+                        <a href="https://www.youtube.com/channel/UCiAFo7cXC7KAQ13Lsf8oq6g?app=desktop" class="circle"><i class="fa-brands fa-youtube social-icon"></i></a>
+                        <a href="https://www.linkedin.com/company/csi-sct-sb/mycompany/" class="circle"><i class="fa-brands fa-linkedin social-icon"></i></a>                    
+                        <a href="https://goo.gl/maps/Zz3vsPG6yXLapY1Y8" class="circle"><i class="fa-solid fa-location-dot social-icon"></i></a>
+                        <a href="mailto:csi@sctce.ac.in" class="circle"><i class="fa-solid fa-envelope social-icon"></i></a>                    
+                        <a onclick="copyPhoneNumber()" class="circle"><i class="fa-solid fa-phone social-icon"></i></a>
+                    </div>
+                    <p class="copyright">© Copyright CSI SCT SB. All Rights Reserved</p>
+                </section>                    
+            </div>                        
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/more-icon.js"></script>
+    <script type="text/javascript" src="static/js/preloader.js"></script>
+    <script type="text/javascript" src="static/js/copyPhoneNum.js"></script>
+    <script type="text/javascript" src="static/js/scrollToPosition.js"></script>
+</body>
+</html>

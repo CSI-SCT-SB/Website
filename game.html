@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-CSI SCTSB</title>
+    <link rel="icon" href="static/icons/csi-sct-logo-white.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="static/css/game.css">
+    <meta name="description" content="CSI SCT SB aims to develop the technical skills of students for their professional development by providing numerous webinars and workshops on leading topics." />
+    <meta property="og:title" content="CSI SCT SB" />
+    <meta property="og:url" content="https://www.sctce.ac.in/" />
+    <meta property="og:description" content="Official website of Computer Society of India Sree Chitra Thirunal College of Engineering" />
+    <meta property="og:image" content="static/images/csi-meta-tag-img" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+</head>
+<body>
+    <div class="game">
+        <div id="counter">0</div>    
+        <div id="controlls">
+            <div>
+                <button id="forward">
+                    <svg width="30" height="30" viewBox="0 0 10 10">
+                        <g transform="rotate(0, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                        </g>
+                    </svg>
+                </button>
+                <button id="left">
+                    <svg width="30" height="30" viewBox="0 0 10 10">
+                        <g transform="rotate(-90, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                        </g>
+                    </svg>
+                </button>
+                <button id="backward">
+                    <svg width="30" height="30" viewBox="0 0 10 10">
+                        <g transform="rotate(180, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                        </g>
+                    </svg>
+                </button>
+                <button id="right">
+                    <svg width="30" height="30" viewBox="0 0 10 10">
+                        <g transform="rotate(90, 5,5)">
+                        <path d="M5,4 L7,6 L3,6 L5,4" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="end">
+            <button id="retry">Retry</button>
+        </div>
+    </div>
+    <div class="bigscreen">
+        <img src="" class="qrcode" alt="">
+        <p class="text">
+            This game is only available in mobile. Scan this QR Code to play Game!!
+        </p>
+    </div>
+    <script src="static/js/game.js"></script>
+</body>
+</html>

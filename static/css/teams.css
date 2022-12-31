@@ -1,0 +1,1023 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    --horizontal-margin: 7vw;
+    --vertical-margin: 5vh;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/noise-bg.svg) center;
+    /* background-repeat: no-repeat; */
+    background-size: 40%;  
+}
+a,i{
+    color: white;
+}
+.circle, .social-icon{
+    text-decoration: none;
+}
+/* body::before{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/noise-bg.svg);
+    background-repeat: repeat-y;
+    opacity: 0.2;
+} */
+
+.title-and-arrow{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: normal;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.moreIcon{
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: unset !important;;
+}
+
+.hamburgerIcon{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: end;
+  }
+  .hamburgerIcon div{
+    background: whitesmoke;
+    height: 2.5px;
+    border-radius: 20%;
+  }
+
+  .line1{
+    width: 34px;
+    background-color: black;
+  }
+  .line2{
+    width: 25px;
+    background-color: black;
+  }
+  .line3{
+    width: 30px;
+    background-color: black;
+  }
+
+  .animatedLine1{
+    width: 30px;
+    transform: rotate(315deg);
+    position: absolute;
+    left: -14px;
+    top: 0px;
+  }
+  .animatedLine2{
+    width: 0;
+    height: 0;
+  }
+  .animatedLine3{
+    width: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -14px;
+    top: 0.5px;
+  }
+
+.logo{
+
+    margin-left: 17px;
+    margin-right: 17px;
+    margin-top: 17px;
+    
+}
+
+ul{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #DCCBCB;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+}
+li{
+    padding: 9vw;
+    padding-top: 26px;
+    padding-bottom: 18px;
+    font-size: 32px;
+}
+
+li a{
+    text-decoration: none;
+    color: #DCCBCB;
+}
+nav{
+    position: absolute;
+    top: 361px;
+    height: 88px;
+    background: #000717;
+    width: 100%;
+}
+
+.execom{
+
+    margin-top: 150px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+    background: url(../images/robot-img.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    padding: var(--vertical-margin) var(--horizontal-margin);   
+    /* padding: 10px; */
+  }
+
+.profile p{
+    color: #DCCBCB;
+    padding-top: 8px ;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    
+}
+
+.profile h1{
+    padding-top: 7px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.profile{
+    background: #1A1919;
+    border-radius: 15px;
+    margin: 5.5vw;
+    width: 240px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.profile>img{
+    width: 240px;
+    height: 214.15px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.content{
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 85px;
+}
+
+.execomlast3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.samprofiles {
+    display: flex;
+    justify-content: center;
+    padding-inline: 85px;
+    flex-wrap: wrap;
+}
+.samexecom {
+    margin-top: 50px;
+}
+.samexecomfirst3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.samexecomsecond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.samexecomlast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.head{
+    border-bottom: 10px solid #FDE50E;
+    border-radius: 20px;
+}
+.teams{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secfirst2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.seclast5{
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seclast5 .profile {
+    margin: 20px;
+}
+
+.execom>h1{
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+}
+.samexecom>h1{
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+
+header>h1{
+    justify-self: center;
+    align-self: center;
+    font-size: 80px;  
+    text-shadow: 
+    3px 3px 0px white,   /* Right shadow */
+    3px 0px 0px white,  /* Left shadow */
+    3px 0px 0px white,   /* Bottom shadow */
+    3px 0px 0px white;  /* Top shadow */
+    color: black;
+}
+
+.senateexecom2022>h1{
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    text-decoration: underline;
+    padding-inline: 15px;
+}
+.secexecom>h1{
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+.senateexecom2022>h2{
+    font-family: 'Martel sans', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 51px;
+    text-decoration: underline;
+}
+
+.senate{
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+.senateMob li {
+    padding: 2vh;
+    padding-top: 0px;
+    padding-bottom: 1vh;
+}
+
+.teams{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carousel-indicators {
+    bottom: -100px;
+}
+
+
+.container {
+    padding-inline: 0px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #00071700;
+    filter: invert();
+    position: absolute;
+    size: 20px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 15%;
+}
+
+.carousel-indicators li {
+    background-color: #00020c34;
+    border-color: #1A1919;
+}
+
+.carousel-indicators .active {
+    background-color: #00020c8e;
+} 
+
+.senateexecom2022 .container h2{
+    font-size: 5vw;
+    font-family: 'Martel sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.senateMob {
+    display:none;
+} 
+
+.circlephone {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    width: 100px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.circlephone:hover {
+    background: rgba(0, 0, 0, 1.0);
+}
+
+@media only screen and (max-width: 600px){
+
+    *, ::after, ::before {
+        box-sizing: unset;
+    }
+
+    .moreIcon{
+        right: 20px;
+      }
+
+
+    body{
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+    .logo{
+    
+        margin-left: 17px;
+        margin-right: 17px;
+        margin-top: 17px;
+        
+    }
+
+    .logo>img {
+        width: 19vw;
+    }
+
+    ul{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        color: #DCCBCB;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        margin: auto;    
+    }
+    li{
+        padding: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        font-size: 4vw;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: #DCCBCB;
+    }
+    nav{
+        height: 5vh;
+        background: #000717;
+        position: absolute;
+        width: 100%;
+        top: 43vw;
+        margin-block: 0px;
+    }
+    
+    .execom{
+        margin-top: 5vh;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 174px;
+        background: url('../images/bgmobile.png') center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 15vw;
+    }
+
+    .main-header{
+        padding: 5px;
+
+      }
+    
+    .profile p{
+        color: #DCCBCB;
+        padding-top: 8px ;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: 'Montserrat';
+        
+    }
+    
+    .profile h1{
+        padding-top: 7px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    
+    .profile{
+        background: #1A1919;
+        border-radius: 15px;
+        margin: 10px;
+        width: 185px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        
+    }
+
+    .profile>img{
+        width: 185px;
+        height: 214.15px;
+        object-fit: cover;
+    }
+    
+    .content{
+        text-align: center;
+    }
+
+    
+    .profiles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 0px;
+    }
+    .execomlast3{
+        display: contents;
+        align-items: center;
+        
+    } 
+
+    .samprofiles {
+        display: flex;
+        justify-content: center;
+        padding-inline: 0px;
+        flex-wrap: wrap;
+    }
+    .samexecom {
+        margin-top: 3vh;
+    }
+    
+    .samexecomfirst3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .samexecomsecond{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    
+    .samexecomlast{
+        display: contents;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #media-head {
+        margin: 5.5vw;
+    }
+    
+    .senateexecom2022 .senateWeb {
+        display: none;
+    }
+    
+    .senateMob {
+        justify-content: center;
+        padding-inline: 20px;
+        display: contents;
+    }
+    
+    .secfirst2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    
+    #designhead {
+        margin-inline: 1000px;
+    }
+    .seclast5{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .execom>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    .samexecom>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    
+    img[src="static\images\logo_csi.png"] {
+        width: 10vh;
+    }
+    
+    header>h1{
+        justify-self: center;
+        align-self: center;
+        font-size: 8vw;  
+        text-shadow: 
+        3px 3px 0px white,   /* Right shadow */
+        3px 0px 0px white,  /* Left shadow */
+        3px 0px 0px white,   /* Bottom shadow */
+        3px 0px 0px white;  /* Top shadow */
+     
+        color: black;
+        
+    
+    }
+    
+    .senateexecom2022>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding-inline: 15px;
+    }
+
+    .head{
+        border-bottom: 10px solid #FDE50E;
+        border-radius: 20px;
+        margin-inline: 100px;
+    }
+
+    .secexecom>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 40px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .container h2{
+        font-size: 5vw;
+    }
+    
+    /* .senate{
+        margin: 10px;
+        margin-bottom: 60px;
+    } */
+    
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    header {
+        padding-bottom: 150px;
+    }
+    li {
+        padding: 5vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        font-size: 27px;
+    }
+
+    .main-header{
+        padding: 10px;
+
+      }
+    
+    nav{
+        height: 6vh;
+        background: #000717;
+        position: absolute;
+        width: 100%;
+        top: 28vh;
+        margin-block: 2vh;
+    }
+
+    .logo>img {
+        width: 19vw;
+    }
+
+    header>h1 {
+        font-size: 60px;
+    }
+
+    .profile {
+        background: #1A1919;
+        border-radius: 15px;
+        margin: 30px;
+        width: 240px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .execomlast3 {
+        display: contents;
+    }
+
+    .profiles {
+        padding: 10px;
+    }
+
+    .samprofiles {
+        display: flex;
+        justify-content: center;
+        padding-inline: 0px;
+        flex-wrap: wrap;
+    }
+
+    .senateexecom2022 .senateWeb {
+        display: none;
+    }
+
+    .senateMob {
+        justify-content: center;
+        padding-inline: 20px;
+        display: contents;
+    }
+
+    
+    .container .teams .head{
+        border-bottom: 10px solid #FDE50E;
+        border-radius: 20px;
+        margin-inline: 200px;
+    }
+
+    .teams .senate {
+        margin-inline: 10px;
+    }
+
+    .senateexecom2022 .container h2 {
+        font-size: 5vw;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%;
+    }
+
+    .secexecom>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 60px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .secfirst2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    
+    #designhead {
+        margin-inline: 1000px;
+    }
+    .seclast5{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1119px){
+    header {
+        padding-bottom: 100px;
+    }
+    li {
+        padding: 5vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+    }
+
+    .main-header{
+        padding: 10px;
+
+      }
+    
+    nav{
+        height: 6vh;
+        background: #000717;
+        position: absolute;
+        width: 100%;
+        top: 29vh;
+        margin-block: 2vh;
+    }
+
+    .logo>img {
+        width: 19vw;
+    }
+
+    .profile {
+        background: #1A1919;
+        border-radius: 15px;
+        margin: 20px;
+        width: 240px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .profiles {
+        padding-inline: 10px;
+    }
+
+    .execomlast3 {
+        display: flex;
+    }
+
+    .samprofiles .samexecomfirst3 .profile, .samprofiles .samexecomlast .profile {
+        margin: 40px;
+    }
+
+    .senateexecom2022 .senateWeb {
+        display: none;
+    }
+
+    .senateMob {
+        justify-content: center;
+        padding-inline: 20px;
+        display: contents;
+    }
+
+    .container .teams .head{
+        border-bottom: 10px solid #FDE50E;
+        border-radius: 20px;
+        margin-inline: 300px;
+    }
+
+    .teams .senate {
+        margin-inline: 50px;
+    }
+
+    .secexecom>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 60px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .secfirst2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    
+    #designhead {
+        margin-inline: 1000px;
+    }
+    .seclast5{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media only screen and (min-width: 1120px) and (max-width: 1219px){
+    header {
+        padding-bottom: 100px;
+    }
+
+    li {
+        padding: 5vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+    }
+
+    .main-header{
+        padding: 10px;
+
+    }
+
+    .logo>img {
+        width: 19vw;
+    }
+    
+    nav{
+        height: 6vh;
+        background: #000717;
+        position: absolute;
+        width: 100%;
+        top: 29vh;
+        margin-block: 2vh;
+    }
+
+    .profile {
+        background: #1A1919;
+        border-radius: 15px;
+        margin: 30px;
+        width: 240px;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .profiles {
+        padding-inline: 10px;
+    }
+
+    .execomlast3 {
+        display: flex;
+    }
+
+    .senateexecom2022 .senateWeb {
+        display: none;
+    }
+
+    .senateMob {
+        justify-content: center;
+        padding-inline: 20px;
+        display: contents;
+    }
+    .container .teams .head{
+        border-bottom: 10px solid #FDE50E;
+        border-radius: 20px;
+        margin-inline: 300px;
+    }
+
+    .teams .senate {
+        margin-inline: 70px;
+    }
+
+    .secexecom>h1{
+        font-family: 'Martel Sans', sans-serif;
+        font-size: 60px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .secfirst2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    
+    #designhead {
+        margin-inline: 1000px;
+    }
+    .seclast5{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1220px) and (max-width: 1330px){
+
+    /* .senateMob li {
+        padding: 2vh;
+        padding-top: 0px;
+        padding-bottom: 1vh;
+    } */
+
+    .main-header{
+        padding: 10px;
+
+      }
+
+    .profiles {
+        padding-inline: 10px;
+    }
+    .senateexecom2022 .senateWeb {
+        display: none;
+    }
+
+    .logo>img {
+        width: 19vw;
+    }
+
+    .senateMob {
+        justify-content: center;
+        padding-inline: 20px;
+        display: contents;
+    }
+
+    .container .teams .head{
+        border-bottom: 10px solid #FDE50E;
+        border-radius: 20px;
+        margin-inline: 300px;
+    }
+
+    .teams .senate {
+        margin-inline: 80px;
+    }
+    
+    .secexecom>h1 {
+        margin-top: 100px;
+    }
+    .seclast5 .profile {
+        margin: 10px;
+    }
+}
+
+
